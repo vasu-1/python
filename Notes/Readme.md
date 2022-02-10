@@ -11,3 +11,6 @@
 - [Operators](./Operators.md)
 - [Recursion in Python](./resurrsion_in_python.md)
 - [anonymous_function](./anonymous_function.md)
+- [Decorators](./Decorators.md)
+- [Modules](./Modules.md)
+- [Class&OOPs](./class&oops.md)
