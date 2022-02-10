@@ -40,6 +40,19 @@ res1,res2 = add(5,6)
 
 ```python
 
+# if we are not sure in which manner there is an arguement
+# at this time we can use this technique to work with this
+def data(name,age):
+	print("name ", name)
+	print("age ", age)
+
+data('vasu',34) # normal passing parameter
+data(23,'Vasu') # it will not give axpected output
+data(age=45,name='vasu') # it will give expected output because we are specifying the name of the arguement
+
+
+
+# Variable length parameter
 def add(*b):
 	c = 0
 	for i in b:
@@ -54,4 +67,45 @@ c = add(1,2,3,4)
 # same as cpp and java
 # there is also default arguement function
 # like fun(a,b=3) # if there is no arguement for b then it will automatically take b=3
+```
+
+## Keyworded Variable Length Arguments in Python
+
+```python
+
+def data(name,**attr):
+	print(name)
+	print(attr)
+
+	for i,j in attr.items(): #fetch the key and value pair
+		print(i, j)
+
+
+data('vasu',age=20,clas=8,num=23)
+
+```
+
+
+
+## Passing list in function
+
+```python
+
+def count(lst):
+	even=0
+	odd=0
+	for i in lst:
+		if i%2 == 0:
+			even+=1
+		else:
+			odd+=1
+	return even,odd
+
+
+lst=[1,2,3,4,5,6,7,8,6,5,2]
+even,odd=count(lst)
+print(even,odd)
+#format in string input
+print("even : {} and odd : {}".format(even,odd))
+
 ```

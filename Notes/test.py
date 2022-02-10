@@ -1,11 +1,12 @@
+import sys
 
-def add(*b):
-	c = 0
-	for i in b:
-		c += i
+sys.setrecursionlimit(123)
+print(sys.getrecursionlimit)
 
-	return c
 
-c = add(1,2,3,4)
+def greet():
+	# print('Hello')
+	# greet()
+	pass
 
-print(c)
+greet()

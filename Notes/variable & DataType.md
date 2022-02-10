@@ -71,8 +71,32 @@ list(range(10)) # 1 to 10
 list(range(2,10,2)) # difference of 2 => 2,4,6,8
 
 
-# Dictionary
+```
 
+## There are also a keyword name `global` which will create a global variable
+## We can access all the global variables from a schop with `globals()` function
+
+```python
+
+# global variable
+
+a = 10
+b=15
+c = 14
+def fun():
+	global a
+	print(a)
+	a = 12
+	print(a)
+	#access the global variables
+	x = globals()
+	# it will take all the global variables
+	# if we want to change the global variable we can do following
+	globals()['b'] = 200 # b will be changed
+ 	print(b) 
+
+print(a)
+print(b) # b will also be changed
 
 
 ```
