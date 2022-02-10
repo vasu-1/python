@@ -1,9 +1,11 @@
-def add_sub_mul(a,b):
-	x = a+b
-	y = a-b
-	z = a*b
-	g = a/b
-	return x,y,z,g
 
-res = add_sub_mul(6,5)
-print(res)
+def add(*b):
+	c = 0
+	for i in b:
+		c += i
+
+	return c
+
+c = add(1,2,3,4)
+
+print(c)
