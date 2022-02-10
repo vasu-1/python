@@ -1,0 +1,3 @@
+# Python
+
+- [Python Notes](./Notes)
