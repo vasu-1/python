@@ -17,3 +17,15 @@ def greet():
 greet()
 
 ```
+
+# Factorial Program in Python using Recursion
+
+```python
+def fact(n):
+	if(n==0):
+		return 1
+
+	return n * fact(n-1)
+
+print(fact(5))
+```

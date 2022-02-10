@@ -9,4 +9,5 @@
 - [numpy](./numpy.md)
 - [fuction](./function.md)
 - [Operators](./Operators.md)
-- [Resurrsion in Python](./resurrsion_in_python.md)
+- [Recursion in Python](./resurrsion_in_python.md)
+- [anonymous_function](./anonymous_function.md)

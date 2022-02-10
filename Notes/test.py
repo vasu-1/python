@@ -1,12 +1,3 @@
-import sys
-
-sys.setrecursionlimit(123)
-print(sys.getrecursionlimit)
-
-
-def greet():
-	# print('Hello')
-	# greet()
-	pass
-
-greet()
+f = lambda a : a*a
+result = f(5)
+print(result)
