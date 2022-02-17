@@ -14,3 +14,6 @@ class Computer:
 
 comp1 = Computer('i7','hp')
 comp1.config()
+
+
+#dsd
