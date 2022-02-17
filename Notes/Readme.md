@@ -16,3 +16,6 @@
 - [Class&OOPs](./class&oops.md)
 - [Types_of_methods](./Types_of_methods.md)
 - [InnerClass](./InnerClass.md)
+- [inheritence](./inheritence.md)
+- [DuckTyping](./DuckTyping.md)
+- [OperatorOverloading](./OperatorOverloading.md)
