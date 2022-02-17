@@ -14,3 +14,4 @@
 - [Decorators](./Decorators.md)
 - [Modules](./Modules.md)
 - [Class&OOPs](./class&oops.md)
+- [Types_of_methods](./Types_of_methods.md)
