@@ -1,0 +1,18 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calc.html</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	Thic is calc page
+	<form action="add" method="post" accept-charset="utf-8">
+		{% csrf_token %}
+		1st : <input type="text" name="num1">
+		2nd : <input type="text" name="num2" value="" placeholder="">
+		<input type="submit" value="">
+	</form>
+</body>
+</html>
