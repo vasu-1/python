@@ -1,3 +1,7 @@
+# Inner Class
+
+```python
+
 class Student:
 
 	def __init__(self,name,roll,brand,cpu,ram):
@@ -34,3 +38,4 @@ class Student:
 
 s2 = Student("vasu",23,"hp","i7",4)
 s2.show()
+```
