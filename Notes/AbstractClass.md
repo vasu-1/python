@@ -6,6 +6,8 @@
 - but after that module we cannot create an object of an abstract class
 
 - Abstract class  atleast one abstract method
+- `Abstract methods does't have defenition but it only has declaration`
+
 
 ```python
 from abc import ABC, abstractmethod
