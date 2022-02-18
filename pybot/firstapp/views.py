@@ -6,7 +6,7 @@ from django import *
 
 def home(request):
 	# return HttpResponse("<h1>Hello World</h1>");
-	return render(requst,'calc.html')
+	return render(request,'calc.html')
 
 def add(request):
 	val1 = request.POST['num1']
