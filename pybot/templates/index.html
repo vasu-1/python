@@ -1,4 +1,5 @@
 {% load static %}
+{% static "images" as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,10 +34,10 @@
 								<nav class="main_nav">
 									<ul class="d-flex flex-row align-items-start justify-content-start">
 										<li class="active"><a href="index.html">Home</a></li>
-										<li><a href="about.html">About us</a></li>
+										<li><a href="accounts/register">Register</a></li>
 										<li><a href="#">Services</a></li>
 										<li><a href="#">News</a></li>
-										<li><a href="contact.html">Contact</a></li>
+										<li><a href="{%static 'contact.html'%}">Contact</a></li>
 									</ul>
 								</nav>
 								<div class="header_phone ml-auto">Call us: 00-56 445 678 33</div>
@@ -281,52 +282,26 @@
 
 	
 							<!-- Destination -->
+							{% for dest in dests %}
 							<div class="destination item">
 								<div class="destination_image">
-									<img src="{% static 'images/destination_4.jpg' %}" alt="image">
+									<img src="{{dest.img.url}}" alt="image">
+									{% if dest.offer %}
 									<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
+									{% endif %}
 								</div>
 								<div class="destination_content">
-									<div class="destination_title"><a href="destinations.html">{{ dest1.name }}</a>
+									<div class="destination_title"><a href="{%static 'destinations.html'  %}">{{ dest.name }}</a>
 									</div>
 									<div class="destination_subtitle">
-										<p>{{ dest1.desc  }}</p>
+										<p>{{ dest.desc }}</p>
 									</div>
-									<div class="destination_price">From $1000</div>
+									<div class="destination_price">{{ dest.price }}</div>
 								</div>
 							</div>
 
 
-							<div class="destination item">
-								<div class="destination_image">
-									<img src="{% static 'images/destination_1.jpg' %}" alt="image">
-									<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
-								</div>
-								<div class="destination_content">
-									<div class="destination_title"><a href="destinations.html">Dhaka</a>
-									</div>
-									<div class="destination_subtitle">
-										<p>Biggest City </p>
-									</div>
-									<div class="destination_price">From $650</div>
-								</div>
-							</div>
-
-
-							<div class="destination item">
-								<div class="destination_image">
-									<img src="{% static 'images/destination_3.jpg' %}" alt="image">
-									<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
-								</div>
-								<div class="destination_content">
-									<div class="destination_title"><a href="destinations.html">Kolkata</a>
-									</div>
-									<div class="destination_subtitle">
-										<p>Garden City </p>
-									</div>
-									<div class="destination_price">From $100</div>
-								</div>
-							</div>
+						{% endfor %}
 
 
 						</div>

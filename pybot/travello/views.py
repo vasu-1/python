@@ -4,7 +4,6 @@ from travello.models import Destination
 
 def index(request):
 	# return render(request,'index.html')
-	dest1 = Destination()
-	dest1.name = "Nadiad"
-	dest1.desc = "The lake of city"
-	return render(request,'index.html',{'dest1':dest1})
+	
+	dests=Destination.objects.all()
+	return render(request,'index.html',{'dests':dests})
