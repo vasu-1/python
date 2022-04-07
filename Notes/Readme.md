@@ -21,3 +21,6 @@
 - [OperatorOverloading](./OperatorOverloading.md)
 - [Method Overloading and Overriding](./MethodOverloadingAndOverriding.md)
 - [AbstractClass.md](./AbstractClass.md)
+- [Exception Handling](./exception.md)
+- [Zip Function in python](./zip_fun.md)
+- [Socket_Server](./socket_server.md)
